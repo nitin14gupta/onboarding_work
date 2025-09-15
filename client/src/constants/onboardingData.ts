@@ -7,6 +7,8 @@ export interface OnboardingStep {
   bgColor?: string; // background color, optional
   subtext?: string;
   button?: string;
+  mainTitle?: string;
+  mainSubtext?: string;
   fields: Array<
     | { type: 'input'; label: string; name: string; placeholder?: string }
     | { type: 'select'; label: string; name: string; options: string[] }
