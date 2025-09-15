@@ -88,14 +88,17 @@ export default function OnboardingStep() {
 
       <section className="flex-1 overflow-auto">
         {/* <h1 className="text-center text-xl font-semibold text-[#20242B]">{config.title}</h1> */}
-        {config.subtitle && (
-          <p className="text-center text-sm text-[#555A6B] mt-1">{config.subtitle}</p>
-        )}
+        {/* {config.subtext && (
+          <p className="text-center text-sm text-[#555A6B] mt-1">{config.subtext}</p>
+        )} */}
 
         <div className="mt-6">
           <VersionA image={config.image} />
         </div>
         <h1 className="text-center text-[2.2vh] font-semibold text-[#20242B] mt-6">{config.title}</h1>
+        {config.subtext && (
+          <p className="text-center text-[9px] text-[#555A6B] mt-2">{config.subtext}</p>
+        )}
       </section>
 
       {/* Buttons based on data definition */}
