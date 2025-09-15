@@ -9,7 +9,16 @@ const steps = onboardingData; // use data-driven steps
 function Header() {
   return (
     <header className="w-full py-3 flex items-center">
-      <div className="h-9 w-9 rounded-full bg-white border border-[#E5E7EB] grid place-items-center text-[#004392] font-semibold">G</div>
+      <div className="h-12 w-12 rounded-full bg-white border border-[#E5E7EB] overflow-hidden">
+        <Image
+          src="/images/vridhee_logo.png"
+          alt="logo"
+          className="h-full w-full object-contain"
+          width={100}
+          height={100}
+        />
+      </div>
+
     </header>
   );
 }
@@ -58,7 +67,7 @@ function VersionB({ image }: { image: string }) {
 export default function OnboardingStep() {
   const params = useParams<{ step: string }>();
   const router = useRouter();
-  const total = steps.length; // first 8 for now
+  const total = steps.length;
   const current = Number(params.step);
   const [loading, setLoading] = useState(false);
 
