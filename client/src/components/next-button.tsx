@@ -15,9 +15,7 @@ export const NextButton: React.FC<NextButtonProps> = ({
         <button
             onClick={onClick}
             disabled={disabled}
-            className={`w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 
-        text-white font-medium py-4 px-6 rounded-xl transition-colors 
-        duration-200 text-lg ${className}`}
+            className={`w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 text-white font-medium py-4 px-6 rounded-[50] transition-colors duration-200 text-lg ${className}`}
         >
             Next
         </button>

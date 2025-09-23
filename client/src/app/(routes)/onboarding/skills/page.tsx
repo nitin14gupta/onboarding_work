@@ -43,7 +43,7 @@ export default function SkillsPage({ step = 3 }: SkillsPageProps) {
     const isFormValid = selectedSkills.length > 0 && selectedInterests.length > 0;
 
     const onNext = () => {
-        router.push('/onboarding/skills');
+        router.push('/onboarding/health');
     }
 
     const onPrevious = () => {

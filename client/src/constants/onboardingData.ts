@@ -343,477 +343,477 @@ export const onboardingData: OnboardingStep[] = [
 
   //10. LifeStyle Assessment Intro
   {
-      key: "lifestyle-assessment-intro",
-      title: "Let's do a lifestyle assessment to understand where your health stands.",
-      image: "/images/Page 10.png",
-      bgColor: "###EEF3FF",
-      subtext: "Please fill it out genuinely so we can suggest a better lifestyle routine for you.",
-      fields: [],
-      buttons: [
-        { key: "ok", label: "OK" }
-      ],
-    },
+    key: "lifestyle-assessment-intro",
+    title: "Let's do a lifestyle assessment to understand where your health stands.",
+    image: "/images/Page 10.png",
+    bgColor: "###EEF3FF",
+    subtext: "Please fill it out genuinely so we can suggest a better lifestyle routine for you.",
+    fields: [],
+    buttons: [
+      { key: "ok", label: "OK" }
+    ],
+  },
 
-// 11. Activity Level
-{
-  key: "activity-level",
-  title: "Activity level",
-  image: "/images/Page 11.png",
-  bgColor: "#fff",
-  fields: [
-    {
-      type: "radio",
-      label: "Current Activity Level",
-      name: "activityLevel",
-      options: [
-        "Sedentary",
-        "Lightly active",
-        "Active",
-        "Very active"
-      ]
-    }
-  ],
-  buttons: [
-    { key: "previous", label: "Previous" },
-    { key: "next", label: "Next" }
-  ]
-},
+  // 11. Activity Level
+  {
+    key: "activity-level",
+    title: "Activity level",
+    image: "/images/Page 11.png",
+    bgColor: "#fff",
+    fields: [
+      {
+        type: "radio",
+        label: "Current Activity Level",
+        name: "activityLevel",
+        options: [
+          "Sedentary",
+          "Lightly active",
+          "Active",
+          "Very active"
+        ]
+      }
+    ],
+    buttons: [
+      { key: "previous", label: "Previous" },
+      { key: "next", label: "Next" }
+    ]
+  },
 
-// 12. Occupation
-{
-  key: "occupation",
-  title: "Tell us about your job",
-  image: "/images/Page 12.png",
-  bgColor: "#fff",
-  fields: [
-    {
-      type: "radio",
-      label: "Occupation Type",
-      name: "occupationType",
-      options: [
-        "Desk job",
-        "Field work",
-        "House work",
-        "Retired"
-      ]
-    }
-  ],
-  buttons: [
-    { key: "previous", label: "Previous" },
-    { key: "next", label: "Next" }
-  ]
-},
+  // 12. Occupation
+  {
+    key: "occupation",
+    title: "Tell us about your job",
+    image: "/images/Page 12.png",
+    bgColor: "#fff",
+    fields: [
+      {
+        type: "radio",
+        label: "Occupation Type",
+        name: "occupationType",
+        options: [
+          "Desk job",
+          "Field work",
+          "House work",
+          "Retired"
+        ]
+      }
+    ],
+    buttons: [
+      { key: "previous", label: "Previous" },
+      { key: "next", label: "Next" }
+    ]
+  },
 
-// 13. Diet
-{
-  key: "diet",
-  title: "What's your usual diet like?",
-  image: "/images/Page 13.png",
-  bgColor: "#fff",
-  fields: [
-    {
-      type: "radio",
-      label: "Dietary Preferences",
-      name: "dietaryPreference",
-      options: [
-        "Veg",
-        "Non-veg",
-        "Vegan",
-        "Keto"
-      ]
-    }
-  ],
-  buttons: [
-    { key: "previous", label: "Previous" },
-    { key: "next", label: "Next" }
-  ]
-},
+  // 13. Diet
+  {
+    key: "diet",
+    title: "What's your usual diet like?",
+    image: "/images/Page 13.png",
+    bgColor: "#fff",
+    fields: [
+      {
+        type: "radio",
+        label: "Dietary Preferences",
+        name: "dietaryPreference",
+        options: [
+          "Veg",
+          "Non-veg",
+          "Vegan",
+          "Keto"
+        ]
+      }
+    ],
+    buttons: [
+      { key: "previous", label: "Previous" },
+      { key: "next", label: "Next" }
+    ]
+  },
 
-// 14. Smoking Status
-{
-  key: "smoking-status",
-  title: "Smoking Status",
-  image: "/images/Page 14.png",
-  bgColor: "#fff",
-  fields: [
-    {
-      type: "radio",
-      label: "Do You Smoke ?",
-      name: "doYouSmoke",
-      options: ["Yes", "No"]
-    },
-    {
-      type: "radio",
-      label: "Smoking Habits",
-      name: "smokingHabits",
-      options: [
-        "Occasional Smoker",
-        "Light Smoker (1–3/day)",
-        "Moderate Smoker (4–10/day)",
-        "Heavy Smoker (15–20+/day)",
-        "Former Smoker",
-        "Trying to Quit"
-      ]
-    }
-  ],
-  buttons: [
-    { key: "previous", label: "Previous" },
-    { key: "next", label: "Next" }
-  ]
-},
-// 15. Alcohol Status
-{
-  key: "alcohol-status",
-  title: "Alcohol Status",
-  image: "/images/Page 15.png",
-  bgColor: "#fff",
-  fields: [
-    {
-      type: "radio",
-      label: "Do You Drink Alcohol ?",
-      name: "doYouDrinkAlcohol",
-      options: ["Yes", "No"]
-    },
-    {
-      type: "radio",
-      label: "Alcohol Habits",
-      name: "alcoholHabits",
-      options: [
-        "Occasionally (1–2 drinks/week)",
-        "Social Drinker (3–5 drinks/week)",
-        "Regular Drinker (6–10 drinks/week)",
-        "Heavy Drinker (10+ drinks/week)"
-      ]
-    }
-  ],
-  buttons: [
-    { key: "previous", label: "Previous" },
-    { key: "next", label: "Next" }
-  ]
-},
+  // 14. Smoking Status
+  {
+    key: "smoking-status",
+    title: "Smoking Status",
+    image: "/images/Page 14.png",
+    bgColor: "#fff",
+    fields: [
+      {
+        type: "radio",
+        label: "Do You Smoke ?",
+        name: "doYouSmoke",
+        options: ["Yes", "No"]
+      },
+      {
+        type: "radio",
+        label: "Smoking Habits",
+        name: "smokingHabits",
+        options: [
+          "Occasional Smoker",
+          "Light Smoker (1–3/day)",
+          "Moderate Smoker (4–10/day)",
+          "Heavy Smoker (15–20+/day)",
+          "Former Smoker",
+          "Trying to Quit"
+        ]
+      }
+    ],
+    buttons: [
+      { key: "previous", label: "Previous" },
+      { key: "next", label: "Next" }
+    ]
+  },
+  // 15. alcohol-status
+  {
+    key: "alcohol-status",
+    title: "Alcohol Status",
+    image: "/images/Page 15.png",
+    bgColor: "#fff",
+    fields: [
+      {
+        type: "radio",
+        label: "Do You Drink Alcohol ?",
+        name: "doYouDrinkAlcohol",
+        options: ["Yes", "No"]
+      },
+      {
+        type: "radio",
+        label: "Alcohol Habits",
+        name: "alcoholHabits",
+        options: [
+          "Occasionally (1–2 drinks/week)",
+          "Social Drinker (3–5 drinks/week)",
+          "Regular Drinker (6–10 drinks/week)",
+          "Heavy Drinker (10+ drinks/week)"
+        ]
+      }
+    ],
+    buttons: [
+      { key: "previous", label: "Previous" },
+      { key: "next", label: "Next" }
+    ]
+  },
 
-// 16. Resting Hours
-{
-  key: "resting-hours",
-  title: "Resting Hours",
-  image: "/images/Page 16.png",
-  bgColor: "#fff",
-  fields: [
-    {
-      type: "radio",
-      label: "Sleep Duration",
-      name: "sleepDuration",
-      options: [
-        "Less than 4 hrs",
-        "4–6 hrs",
-        "6–8 hrs",
-        "More than 8 hrs"
-      ]
-    }
-  ],
-  buttons: [
-    { key: "previous", label: "Previous" },
-    { key: "next", label: "Next" }
-  ]
-},
+  // 16. resting-hours
+  {
+    key: "resting-hours",
+    title: "Resting Hours",
+    image: "/images/Page 16.png",
+    bgColor: "#fff",
+    fields: [
+      {
+        type: "radio",
+        label: "Sleep Duration",
+        name: "sleepDuration",
+        options: [
+          "Less than 4 hrs",
+          "4–6 hrs",
+          "6–8 hrs",
+          "More than 8 hrs"
+        ]
+      }
+    ],
+    buttons: [
+      { key: "previous", label: "Previous" },
+      { key: "next", label: "Next" }
+    ]
+  },
 
-// 17. Sleep Experience
-{
-  key: "sleep-experience",
-  title: "Sleep Experience",
-  image: "/images/Page 17.png",
-  bgColor: "#fff",
-  fields: [
-    {
-      type: "radio",
-      label: "Sleep Quality",
-      name: "sleepQuality",
-      options: [
-        "Very Poor",
-        "Poor",
-        "Average",
-        "Good",
-        "Excellent"
-      ]
-    }
-  ],
-  buttons: [
-    { key: "previous", label: "Previous" },
-    { key: "next", label: "Next" }
-  ]
-},
+  // 17. sleep-experience
+  {
+    key: "sleep-experience",
+    title: "Sleep Experience",
+    image: "/images/Page 17.png",
+    bgColor: "#fff",
+    fields: [
+      {
+        type: "radio",
+        label: "Sleep Quality",
+        name: "sleepQuality",
+        options: [
+          "Very Poor",
+          "Poor",
+          "Average",
+          "Good",
+          "Excellent"
+        ]
+      }
+    ],
+    buttons: [
+      { key: "previous", label: "Previous" },
+      { key: "next", label: "Next" }
+    ]
+  },
 
-// 18. Daily Digital Screen Use
-{
-  key: "screen-use",
-  title: "Daily Digital Screen Use",
-  image: "/images/Page 18.png",
-  bgColor: "#fff",
-  fields: [
-    {
-      type: "radio",
-      label: "Screen Time / Phone Usage Daily",
-      name: "screenTime",
-      options: [
-        "Less than 1 hour",
-        "1–3 hours",
-        "3–5 hours",
-        "5–8 hours",
-        "More than 8 hours"
-      ]
-    }
-  ],
-  buttons: [
-    { key: "previous", label: "Previous" },
-    { key: "next", label: "Next" }
-  ]
-},
+  // 18. daily-digital-screen Use
+  {
+    key: "screen-use",
+    title: "Daily Digital Screen Use",
+    image: "/images/Page 18.png",
+    bgColor: "#fff",
+    fields: [
+      {
+        type: "radio",
+        label: "Screen Time / Phone Usage Daily",
+        name: "screenTime",
+        options: [
+          "Less than 1 hour",
+          "1–3 hours",
+          "3–5 hours",
+          "5–8 hours",
+          "More than 8 hours"
+        ]
+      }
+    ],
+    buttons: [
+      { key: "previous", label: "Previous" },
+      { key: "next", label: "Next" }
+    ]
+  },
 
-// 19. Health Warning Alert
-{
-  key: "health-warning",
-  title: "Health Warning Alert !",
-  image: "/images/Page 19.png",
-  bgColor: "#EEF3FF",
-  fields: [
-    {
-      type: "custom",
-      component: "description",
-      value: "⚠️ Insufficient sleep is affecting your body's recovery and performance.\n\n⚠️ Low activity levels detected, likely related to your job."
-    }
-  ],
-  buttons: [
-    { key: "ok", label: "OK" }
-  ]
-},
+  // 19. health-warning Alert
+  {
+    key: "health-warning",
+    title: "Health Warning Alert !",
+    image: "/images/Page 19.png",
+    bgColor: "#EEF3FF",
+    fields: [
+      {
+        type: "custom",
+        component: "description",
+        value: "⚠️ Insufficient sleep is affecting your body's recovery and performance.\n\n⚠️ Low activity levels detected, likely related to your job."
+      }
+    ],
+    buttons: [
+      { key: "ok", label: "OK" }
+    ]
+  },
 
-// 20. Additional Medical Info
-{
-  key: "extra-medical-info",
-  title: "Almost done! A bit more on your health info",
-  image: "/images/Page 20.png",
-  bgColor: "#fff",
-  fields: [
-    {
-      type: "tags",
-      label: "Any existing medical conditions",
-      name: "medicalConditions",
-      options: [
-        "Asthma", "Heart condition", "Joint pain",
-        "Diabetes", "Blood Pressure", "Migraine",
-        "Spondylosis", "None"
-      ],
-      limit: 8 // All single select, enforce UI logic if "None" is chosen
-    },
-    {
-      type: "tags",
-      label: "Do you have any allergies?",
-      name: "allergies",
-      options: [
-        "Food allergies", "Skin allergies", "Drug Allergies",
-        "Environmental allergies", "Insect Allergies", "None"
-      ],
-      limit: 6 // All single select, enforce UI logic if "None" is chosen
-    }
-  ],
-  buttons: [
-    { key: "previous", label: "Previous" },
-    { key: "next", label: "Next" }
-  ]
-},
+  // 20. additional-medical Info
+  {
+    key: "extra-medical-info",
+    title: "Almost done! A bit more on your health info",
+    image: "/images/Page 20.png",
+    bgColor: "#fff",
+    fields: [
+      {
+        type: "tags",
+        label: "Any existing medical conditions",
+        name: "medicalConditions",
+        options: [
+          "Asthma", "Heart condition", "Joint pain",
+          "Diabetes", "Blood Pressure", "Migraine",
+          "Spondylosis", "None"
+        ],
+        limit: 8 // All single select, enforce UI logic if "None" is chosen
+      },
+      {
+        type: "tags",
+        label: "Do you have any allergies?",
+        name: "allergies",
+        options: [
+          "Food allergies", "Skin allergies", "Drug Allergies",
+          "Environmental allergies", "Insect Allergies", "None"
+        ],
+        limit: 6 // All single select, enforce UI logic if "None" is chosen
+      }
+    ],
+    buttons: [
+      { key: "previous", label: "Previous" },
+      { key: "next", label: "Next" }
+    ]
+  },
 
-// 21. Mood & Mind Assessment
-{
-  key: "mood-mind",
-  title: "What’s your mood and mind saying today?",
-  image: "/images/Page 21.png",
-  bgColor: "#fff",
-  fields: [
-    {
-      type: "custom",
-      component: "description",
-      value: "How stressed do you feel daily?" // render as label for scale
-    },
-    {
-      type: "custom",
-      component: "slider",
-      value: "stressLevel" // custom input component, value to be bound for backend
-    },
-    {
-      type: "radio",
-      label: "Do you experience anxiety, mood swings, or depression?",
-      name: "mindStatus",
-      options: ["Yes", "No"]
-    },
-    {
-      type: "radio",
-      label: "Have you ever practiced meditation or breathing exercises?",
-      name: "meditated",
-      options: ["Yes", "No"]
-    }
-  ],
-  buttons: [
-    { key: "previous", label: "Previous" },
-    { key: "next", label: "Next" }
-  ]
-},
+  // 21. mood-mind-assessment
+  {
+    key: "mood-mind",
+    title: "What’s your mood and mind saying today?",
+    image: "/images/Page 21.png",
+    bgColor: "#fff",
+    fields: [
+      {
+        type: "custom",
+        component: "description",
+        value: "How stressed do you feel daily?" // render as label for scale
+      },
+      {
+        type: "custom",
+        component: "slider",
+        value: "stressLevel" // custom input component, value to be bound for backend
+      },
+      {
+        type: "radio",
+        label: "Do you experience anxiety, mood swings, or depression?",
+        name: "mindStatus",
+        options: ["Yes", "No"]
+      },
+      {
+        type: "radio",
+        label: "Have you ever practiced meditation or breathing exercises?",
+        name: "meditated",
+        options: ["Yes", "No"]
+      }
+    ],
+    buttons: [
+      { key: "previous", label: "Previous" },
+      { key: "next", label: "Next" }
+    ]
+  },
 
-// 22. Wellness Modes
-{
-  key: "wellness-modes",
-  title: "Which wellness modes do you prefer?",
-  image: "/images/Page 22.png",
-  bgColor: "#fff",
-  fields: [
-    {
-      type: "tags",
-      label: "Select  Wellness Modes",
-      name: "wellnessModes",
-      options: [
-        "Meditation", "Pranayama", "Yoga", "Zomba",
-        "Fitness/Workouts", "Migraine", "Ayurveda or Alternative therapies"
-      ],
-      limit: 3 // set actual limit according to your UI/logic
-    }
-  ],
-  buttons: [
-    { key: "previous", label: "Previous" },
-    { key: "next", label: "Next" }
-  ]
-},
+  // 22. wellness-modes
+  {
+    key: "wellness-modes",
+    title: "Which wellness modes do you prefer?",
+    image: "/images/Page 22.png",
+    bgColor: "#fff",
+    fields: [
+      {
+        type: "tags",
+        label: "Select  Wellness Modes",
+        name: "wellnessModes",
+        options: [
+          "Meditation", "Pranayama", "Yoga", "Zomba",
+          "Fitness/Workouts", "Migraine", "Ayurveda or Alternative therapies"
+        ],
+        limit: 3 // set actual limit according to your UI/logic
+      }
+    ],
+    buttons: [
+      { key: "previous", label: "Previous" },
+      { key: "next", label: "Next" }
+    ]
+  },
 
-// 23. Session Type Selection
-{
-  key: "session-type",
-  title: "Please select your preferred session type",
-  image: "/images/Page 23.png",
-  bgColor: "#fff",
-  fields: [
-    {
-      type: "radio",
-      label: "Select session types",
-      name: "sessionType",
-      options: [
-        "Live 1:1",
-        "Group sessions",
-        "Pre-recorded videos",
-        "Self-Mode"
-      ]
-    }
-  ],
-  buttons: [
-    { key: "previous", label: "Previous" },
-    { key: "next", label: "Next" }
-  ]
-},
+  // 23. session-type-selection
+  {
+    key: "session-type",
+    title: "Please select your preferred session type",
+    image: "/images/Page 23.png",
+    bgColor: "#fff",
+    fields: [
+      {
+        type: "radio",
+        label: "Select session types",
+        name: "sessionType",
+        options: [
+          "Live 1:1",
+          "Group sessions",
+          "Pre-recorded videos",
+          "Self-Mode"
+        ]
+      }
+    ],
+    buttons: [
+      { key: "previous", label: "Previous" },
+      { key: "next", label: "Next" }
+    ]
+  },
 
-// 24. Time & Session Length
-{
-  key: "time-session-length",
-  title: "Your preferred time and session length",
-  image: "/images/Page 24.png",
-  bgColor: "#fff",
-  fields: [
-    {
-      type: "custom",
-      component: "day-picker", // Custom multi-select days widget
-      value: "days"
-    },
-    {
-      type: "select",
-      label: "Prefer Time",
-      name: "preferTime",
-      options: [
-        // You can fill all 24-hour and AM/PM slots as needed.
-        "11:30 AM"
-      ]
-    },
-    {
-      type: "radio",
-      label: "Prefer Duration",
-      name: "preferDuration",
-      options: [
-        "15 min",
-        "30 min",
-        "60 min"
-      ]
-    }
-  ],
-  buttons: [
-    { key: "previous", label: "Previous" },
-    { key: "next", label: "Next" }
-  ]
-},
+  // 24. time-session-length
+  {
+    key: "time-session-length",
+    title: "Your preferred time and session length",
+    image: "/images/Page 24.png",
+    bgColor: "#fff",
+    fields: [
+      {
+        type: "custom",
+        component: "day-picker", // Custom multi-select days widget
+        value: "days"
+      },
+      {
+        type: "select",
+        label: "Prefer Time",
+        name: "preferTime",
+        options: [
+          // You can fill all 24-hour and AM/PM slots as needed.
+          "11:30 AM"
+        ]
+      },
+      {
+        type: "radio",
+        label: "Prefer Duration",
+        name: "preferDuration",
+        options: [
+          "15 min",
+          "30 min",
+          "60 min"
+        ]
+      }
+    ],
+    buttons: [
+      { key: "previous", label: "Previous" },
+      { key: "next", label: "Next" }
+    ]
+  },
 
-// 25. Social Learning Choices
-{
-  key: "social-learning",
-  title: "Tell us your social learning choices.",
-  image: "/images/Page 25.png",
-  bgColor: "#fff",
-  fields: [
-    {
-      type: "radio",
-      label: "Would you like to join wellness challenges?",
-      name: "wellnessChallenges",
-      options: ["Yes", "No"]
-    },
-    {
-      type: "radio",
-      label: "Do you want to interact with other learners?",
-      name: "interactWithLearners",
-      options: ["Yes", "No"]
-    },
-    {
-      type: "radio",
-      label: "Are you open to mentor suggestions?",
-      name: "mentorSuggestions",
-      options: ["Yes", "No"]
-    }
-  ],
-  buttons: [
-    { key: "previous", label: "Previous" },
-    { key: "next", label: "Next" }
-  ]
-},
+  // 25. social-learning-choices
+  {
+    key: "social-learning",
+    title: "Tell us your social learning choices.",
+    image: "/images/Page 25.png",
+    bgColor: "#fff",
+    fields: [
+      {
+        type: "radio",
+        label: "Would you like to join wellness challenges?",
+        name: "wellnessChallenges",
+        options: ["Yes", "No"]
+      },
+      {
+        type: "radio",
+        label: "Do you want to interact with other learners?",
+        name: "interactWithLearners",
+        options: ["Yes", "No"]
+      },
+      {
+        type: "radio",
+        label: "Are you open to mentor suggestions?",
+        name: "mentorSuggestions",
+        options: ["Yes", "No"]
+      }
+    ],
+    buttons: [
+      { key: "previous", label: "Previous" },
+      { key: "next", label: "Next" }
+    ]
+  },
 
-// 26. Consent & Preferences
-{
-  key: "consent-preferences",
-  title: "Consent & Preferences",
-  image: "/images/Page 26.png",
-  bgColor: "#fff",
-  fields: [
-    {
-      type: "custom",
-      component: "checkbox-group",
-      value: [
-        "Consent to receive notifications/emails",
-        "Data sharing consent (for AI recommendation or wellness reports to mentors)",
-        "I read and agree to privacy policy",
-        "I read and agree to terms and conditions"
-      ]
-    }
-  ],
-  buttons: [
-    { key: "previous", label: "Previous" },
-    { key: "submit", label: "Submit" }
-  ]
-},
+  // 26. consent-preferences
+  {
+    key: "consent-preferences",
+    title: "Consent & Preferences",
+    image: "/images/Page 26.png",
+    bgColor: "#fff",
+    fields: [
+      {
+        type: "custom",
+        component: "checkbox-group",
+        value: [
+          "Consent to receive notifications/emails",
+          "Data sharing consent (for AI recommendation or wellness reports to mentors)",
+          "I read and agree to privacy policy",
+          "I read and agree to terms and conditions"
+        ]
+      }
+    ],
+    buttons: [
+      { key: "previous", label: "Previous" },
+      { key: "submit", label: "Submit" }
+    ]
+  },
 
-//27. Congratulations page
-{
-  key: "congratulations",
-  mainTitle: "⭐ Congratulations! ⭐",
-  mainSubtext: "You've successfully completed the assessment.",
-  title: "Make an Impact",
-  image: "/images/Page 27.png",
-  bgColor: "#fff",
-  subtext: "You can change a child’s future with the gift of education.",
-  button: "Donate Now",
-  fields: [],
-  buttons: [
-    { key: "submit", label: "Submit" }
-  ]
-}
+  //27. congratulations page
+  {
+    key: "congratulations",
+    mainTitle: "⭐ Congratulations! ⭐",
+    mainSubtext: "You've successfully completed the assessment.",
+    title: "Make an Impact",
+    image: "/images/Page 27.png",
+    bgColor: "#fff",
+    subtext: "You can change a child’s future with the gift of education.",
+    button: "Donate Now",
+    fields: [],
+    buttons: [
+      { key: "submit", label: "Submit" }
+    ]
+  }
 ];
