@@ -35,7 +35,7 @@ export default function SocialLearningChoicesPage({ step = 25 }: { step?: number
                     <div className="w-full max-w-md space-y-6">
                         <div className="space-y-2">
                             <label className="block text-sm font-medium text-gray-700">Would you like to join wellness challenges?</label>
-                            <div className="flex items-center gap-6">
+                            <div className="flex items-center gap-6 pl-2">
                                 <label className="inline-flex items-center gap-2 text-gray-700"><input type="radio" checked={challenges === 'Yes'} onChange={() => setChallenges('Yes')} className="h-4 w-4 text-blue-600" /> Yes</label>
                                 <label className="inline-flex items-center gap-2 text-gray-700"><input type="radio" checked={challenges === 'No'} onChange={() => setChallenges('No')} className="h-4 w-4 text-blue-600" /> No</label>
                             </div>
@@ -43,7 +43,7 @@ export default function SocialLearningChoicesPage({ step = 25 }: { step?: number
 
                         <div className="space-y-2">
                             <label className="block text-sm font-medium text-gray-700">Do you want to interact with other learners?</label>
-                            <div className="flex items-center gap-6">
+                            <div className="flex items-center gap-6 pl-2">
                                 <label className="inline-flex items-center gap-2 text-gray-700"><input type="radio" checked={interact === 'Yes'} onChange={() => setInteract('Yes')} className="h-4 w-4 text-blue-600" /> Yes</label>
                                 <label className="inline-flex items-center gap-2 text-gray-700"><input type="radio" checked={interact === 'No'} onChange={() => setInteract('No')} className="h-4 w-4 text-blue-600" /> No</label>
                             </div>
@@ -51,7 +51,7 @@ export default function SocialLearningChoicesPage({ step = 25 }: { step?: number
 
                         <div className="space-y-2">
                             <label className="block text-sm font-medium text-gray-700">Are you open to mentor suggestions?</label>
-                            <div className="flex items-center gap-6">
+                            <div className="flex items-center gap-6 pl-2">
                                 <label className="inline-flex items-center gap-2 text-gray-700"><input type="radio" checked={mentor === 'Yes'} onChange={() => setMentor('Yes')} className="h-4 w-4 text-blue-600" /> Yes</label>
                                 <label className="inline-flex items-center gap-2 text-gray-700"><input type="radio" checked={mentor === 'No'} onChange={() => setMentor('No')} className="h-4 w-4 text-blue-600" /> No</label>
                             </div>

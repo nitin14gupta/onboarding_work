@@ -32,14 +32,14 @@ export default function TimeSessionLengthPage({ step = 24 }: { step?: number }) 
 
                     {/* Day picker mock (non-functional checkboxes) */}
                     <div className="w-full max-w-md space-y-4">
-                        <div className="flex items-center gap-6 text-sm text-gray-700">
-                            <label className="inline-flex items-center gap-2"><input type="radio" defaultChecked className="h-4 w-4" /> Every day</label>
-                            <label className="inline-flex items-center gap-2"><input type="radio" className="h-4 w-4" /> Weekend</label>
+                        <div className="flex items-center gap-6 text-sm text-gray-700 pl-2">
+                            <label className="inline-flex items-center gap-2"><span className="inline-block h-4 w-4 rounded-full border border-gray-400"></span> Every day</label>
+                            <label className="inline-flex items-center gap-2"><span className="inline-block h-4 w-4 rounded-full border border-gray-400"></span> Weekend</label>
                         </div>
                         <div className="grid grid-cols-7 gap-2 text-center text-xs">
                             {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].map((d, i) => (
-                                <label key={d} className={`rounded-md border px-2 py-2 ${i < 2 || i >= 4 ? 'border-blue-500 text-blue-600' : 'border-gray-300 text-gray-600'}`}>
-                                    <input type="checkbox" defaultChecked={i < 2 || i >= 4} className="hidden" />
+                                <label key={d} className={`rounded-full px-3 py-2 border ${i < 2 || i >= 4 ? 'bg-blue-50 border-blue-500 text-blue-600' : 'bg-white border-gray-300 text-gray-600'}`}>
+                                    <span className={`inline-block mr-2 h-3 w-3 rounded-sm ${i < 2 || i >= 4 ? 'bg-blue-600' : 'bg-transparent border border-gray-300'}`}></span>
                                     {d}
                                 </label>
                             ))}
@@ -50,7 +50,7 @@ export default function TimeSessionLengthPage({ step = 24 }: { step?: number }) 
                             <label className="block text-sm font-medium text-gray-700">Prefer Time</label>
                             <div className="relative">
                                 <input readOnly value="11 : 30" className="w-full rounded-full border border-gray-300 px-4 py-3 text-gray-700" />
-                                <span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400">AM ▾</span>
+                                <span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500">AM ▾</span>
                             </div>
                         </div>
 

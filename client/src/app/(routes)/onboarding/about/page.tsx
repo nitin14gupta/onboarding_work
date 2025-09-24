@@ -183,32 +183,32 @@ export default function AboutPage({ step = 1 }: AboutPageProps) {
                                         <p className="text-xs text-gray-500">Click to change</p>
                                     </div>
                                 ) : (
-                                    <div className="flex flex-col items-center space-y-3">
-                                        {/* Cloud Icon */}
-                                        <svg
-                                            className="w-12 h-12 text-blue-500"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                strokeWidth={2}
-                                                d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6h.1a5 5 0 011 9.9M15 13l-3-3-3 3m3-3v12"
-                                            />
-                                        </svg>
+                                    <div className="flex items-center justify-between gap-6">
+                                        <div className="flex items-center gap-4">
+                                            {/* Cloud Icon */}
+                                            <svg
+                                                className="w-10 h-10 text-blue-500"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth={2}
+                                                    d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6h.1a5 5 0 011 9.9M15 13l-3-3-3 3m3-3v12"
+                                                />
+                                            </svg>
 
-                                        <p className="text-sm text-gray-600 font-medium">
-                                            Drag and drop files here
-                                        </p>
-
-                                        <p className="text-sm text-gray-500">or</p>
+                                            <div className="text-left">
+                                                <p className="text-sm text-gray-600 font-medium">Drag and drop files here</p>
+                                            </div>
+                                            <p className="text-xs text-gray-500">or</p>
+                                        </div>
 
                                         <button
                                             type="button"
-                                            className="inline-flex items-center px-6 py-2 border border-blue-500 text-blue-600 
-          rounded-full text-sm font-medium hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                                            className="inline-flex items-center px-6 py-2 border border-blue-500 text-blue-600 rounded-full text-sm font-medium hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
                                         >
                                             Upload
                                         </button>

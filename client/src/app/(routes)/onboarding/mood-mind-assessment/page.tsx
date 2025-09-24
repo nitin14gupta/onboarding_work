@@ -33,19 +33,30 @@ export default function MoodMindAssessmentPage({ step = 21 }: { step?: number })
                     </h1>
 
                     <div className="w-full max-w-md space-y-6">
-                        <div className="space-y-3">
+                        <div className="space-y-4">
                             <label className="block text-sm font-medium text-gray-700">How stressed do you feel daily?</label>
-                            <input type="range" min={0} max={10} value={stress} onChange={(e) => setStress(Number(e.target.value))} className="w-full" />
-                            <div className="flex justify-between text-xs text-gray-500">
-                                {Array.from({ length: 11 }, (_, i) => (
-                                    <span key={i}>{i}</span>
-                                ))}
+                            <div className="px-2">
+                                <div className="relative h-10">
+                                    {/* track */}
+                                    <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-2 rounded-full bg-gray-200" />
+                                    {/* fill */}
+                                    <div className="absolute left-0 top-1/2 -translate-y-1/2 h-2 rounded-full bg-blue-600" style={{ width: `${(stress / 10) * 100}%` }} />
+                                    {/* thumb */}
+                                    <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 h-7 w-7 rounded-full bg-white border-2 border-blue-600 shadow" style={{ left: `${(stress / 10) * 100}%` }} />
+                                    {/* native range for accessibility */}
+                                    <input aria-label="Stress level" type="range" min={0} max={10} value={stress} onChange={(e) => setStress(Number(e.target.value))} className="absolute inset-0 w-full opacity-0 cursor-pointer" />
+                                </div>
+                                <div className="mt-2 flex justify-between text-xs text-gray-500">
+                                    {Array.from({ length: 11 }, (_, i) => (
+                                        <span key={i}>{i}</span>
+                                    ))}
+                                </div>
                             </div>
                         </div>
 
                         <div className="space-y-2">
                             <label className="block text-sm font-medium text-gray-700">Do you experience anxiety, mood swings, or depression?</label>
-                            <div className="flex items-center gap-6">
+                            <div className="flex items-center gap-6 pl-2">
                                 <label className="inline-flex items-center gap-2 text-gray-700">
                                     <input type="radio" className="h-4 w-4 text-blue-600" checked={mindIssues === 'Yes'} onChange={() => setMindIssues('Yes')} />
                                     <span>Yes</span>
@@ -59,7 +70,7 @@ export default function MoodMindAssessmentPage({ step = 21 }: { step?: number })
 
                         <div className="space-y-2">
                             <label className="block text-sm font-medium text-gray-700">Have you ever practiced meditation or breathing exercises?</label>
-                            <div className="flex items-center gap-6">
+                            <div className="flex items-center gap-6 pl-2">
                                 <label className="inline-flex items-center gap-2 text-gray-700">
                                     <input type="radio" className="h-4 w-4 text-blue-600" checked={meditated === 'Yes'} onChange={() => setMeditated('Yes')} />
                                     <span>Yes</span>

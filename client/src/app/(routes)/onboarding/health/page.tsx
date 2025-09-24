@@ -107,7 +107,7 @@ export default function HealthPage({ step = 4 }: HealthPageProps) {
                         {/* Right Eye Issues */}
                         <div className="space-y-2">
                             <label className="block text-sm font-medium text-gray-700">Do you have any vision issues in your 'Right' eye?</label>
-                            <div className="flex items-center gap-6">
+                            <div className="flex items-center gap-6 pl-2">
                                 <label className="inline-flex items-center gap-2 text-gray-700">
                                     <input type="radio" className="h-4 w-4 text-blue-600" checked={rightEyeIssues === 'Yes'} onChange={() => setRightEyeIssues('Yes')} />
                                     <span>Yes</span>
@@ -122,7 +122,7 @@ export default function HealthPage({ step = 4 }: HealthPageProps) {
                         {/* Left Eye Issues */}
                         <div className="space-y-2">
                             <label className="block text-sm font-medium text-gray-700">Do you have any vision issues in your 'Left' eye?</label>
-                            <div className="flex items-center gap-6">
+                            <div className="flex items-center gap-6 pl-2">
                                 <label className="inline-flex items-center gap-2 text-gray-700">
                                     <input type="radio" className="h-4 w-4 text-blue-600" checked={leftEyeIssues === 'Yes'} onChange={() => setLeftEyeIssues('Yes')} />
                                     <span>Yes</span>

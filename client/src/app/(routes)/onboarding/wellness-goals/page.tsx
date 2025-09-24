@@ -47,7 +47,7 @@ export default function WellnessGoalsPage({ step = 9 }: { step?: number }) {
                         {/* Chronic condition */}
                         <div className="space-y-2">
                             <label className="block text-sm font-medium text-gray-700">Are you dealing with any chronic health conditions?</label>
-                            <div className="flex items-center gap-6">
+                            <div className="flex items-center gap-6 pl-2">
                                 <label className="inline-flex items-center gap-2 text-gray-700">
                                     <input type="radio" className="h-4 w-4 text-blue-600" checked={chronic === 'Yes'} onChange={() => setChronic('Yes')} />
                                     <span>Yes</span>
